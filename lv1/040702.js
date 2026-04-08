@@ -31,20 +31,4 @@ function convertTime(time) {
   return time;
 }
 
-const schedules1 = [710, 800, 1100];
-const timelogs1 = [
-  [710, 2359, 1050, 700, 650, 631, 659],
-  [800, 801, 805, 800, 759, 810, 809],
-  [1105, 1001, 1002, 600, 1059, 1001, 1100],
-];
-const startday1 = 7;
-console.log(solution(schedules1, timelogs1, startday1)); // 3
-const schedules2 = [730, 855, 700, 720];
-const timelogs2 = [
-  [710, 700, 650, 735, 700, 931, 912],
-  [908, 901, 805, 815, 800, 831, 835],
-  [705, 701, 702, 705, 710, 710, 711],
-  [707, 731, 859, 913, 934, 931, 905],
-];
-const startday2 = 1;
-// console.log(solution(schedules2, timelogs2, startday2)); // 2
+module.exports = { solution };
